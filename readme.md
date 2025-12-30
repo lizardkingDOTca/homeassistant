@@ -1,5 +1,8 @@
+Home Assistant
+[home assistant](https://www.home-assistant.io/)
+
 Speech to Text
-[whisper](https://docs.linuxserver.io/images/docker-faster-whisper/)
+[faster whisper](https://docs.linuxserver.io/images/docker-faster-whisper/)
 
 Text to Speech
 [piper](https://docs.linuxserver.io/images/docker-piper/)

@@ -1,7 +1,7 @@
 services:
   homeassistant:
     image: homeassistant/home-assistant
-    container_name: homeautomation-ha
+    container_name: homeautomation-homeassistant
     mem_limit: 8g
     cpu_shares: 768
     security_opt:

@@ -62,7 +62,7 @@ services:
     ports:
       - 10400:10400   # Wyoming protocol port
     restart: unless-stopped
-    command: >
-      --uri tcp://0.0.0.0:10400
-      --model-dir /profiles
+    # command: >
+    #   --uri tcp://0.0.0.0:10400
+    #   --custom-model-dir /profiles
 

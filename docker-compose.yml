@@ -51,3 +51,18 @@ services:
     ports:
       - 10200:10200 # Expose Wyoming protocol port
     restart: unless-stopped
+
+  microwakeword:
+    image: rhasspy/wyoming-microwakeword:latest
+    container_name: homeautomation-microwakeword
+    env_file: 
+      - ./.stack.env
+    volumes:
+      -  /volume1/docker/homeautomation/microwakeword/profiles:/profiles # Optional: store wake word profiles
+    ports:
+      - 10400:10400   # Wyoming protocol port
+    restart: unless-stopped
+    command: >
+      --model /profiles/hey_rhasspy.tflite
+      --threshold 0.5
+

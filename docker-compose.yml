@@ -21,11 +21,9 @@ services:
     env_file: 
       - ./.stack.env
       - ./.user.env
+      - ./.whisper.env
     environment:
-      - WHISPER_MODEL=tiny-int8
       - LOCAL_ONLY= #optional
-      - WHISPER_BEAM=1 #optional
-      - WHISPER_LANG=en #optional
     volumes:
       - /volume1/docker/homeautomation/whisper/config:/config
     ports:

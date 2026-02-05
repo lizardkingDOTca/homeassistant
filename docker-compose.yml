@@ -11,8 +11,10 @@ services:
     network_mode: host
     volumes:
       - /volume1/docker/homeautomation/homeassistant/config:/config:rw
+    user: "${USER}"
     env_file: 
       - ./.stack.env
+      - ./.user.env
     restart: on-failure:5
 
   whisper:

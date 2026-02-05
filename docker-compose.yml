@@ -11,7 +11,7 @@ services:
     network_mode: host
     volumes:
       - /volume1/docker/homeautomation/homeassistant/config:/config:rw
-    user: "${USER}"
+    user: "1000:1000"
     env_file: 
       - ./.stack.env
       - ./.user.env

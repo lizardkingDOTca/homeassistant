@@ -17,7 +17,7 @@ services:
     image: linuxserver/faster-whisper:latest
     container_name: homeautomation-whisper
     env_file: 
-      - ./.stack.env
+      - ./stack.env
       - ./.user.env
       - ./.whisper.env
     volumes:
@@ -30,7 +30,7 @@ services:
     image: linuxserver/piper:latest
     container_name: homeautomation-piper
     env_file: 
-      - ./.stack.env
+      - ./stack.env
       - ./.user.env
       - ./.piper.env
     volumes:
@@ -43,7 +43,7 @@ services:
     image: rhasspy/wyoming-microwakeword:latest
     container_name: homeautomation-microwakeword
     env_file: 
-      - ./.stack.env
+      - ./stack.env
     volumes:
       -  /volume1/docker/homeautomation/microwakeword/profiles:/profiles # Optional: store wake word profiles
     ports:

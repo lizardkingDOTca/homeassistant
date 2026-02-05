@@ -12,8 +12,6 @@ services:
     volumes:
       - /volume1/docker/homeautomation/homeassistant/config:/config:rw
     user: "1000:1000"
-    env_file: 
-      - ./.stack.env
       - ./.user.env
     restart: on-failure:5
 
